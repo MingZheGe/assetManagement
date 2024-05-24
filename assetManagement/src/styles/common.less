@@ -1,0 +1,51 @@
+@primary-0: #3BCEB1;
+@primary-1: #47C6A8;
+@primary-3: #b8ebe2;
+@primary-4: #438883;
+@primary-8: #EBF5F3;
+@primary-2: #ED5758;
+@gray-0: #DDDDDD;
+@gray-1: #999999;
+@gray-2: #838383;
+@gray-3: #e7e7e7;
+@gray-10: #000000;
+@gray-bg: #FAFAFA;
+
+@font-size-base: 1rem;
+@font-size-lg: 1.25rem;
+@font-size-xl: 1.5rem;
+@font-size-sm: 0.875rem;
+@font-size-xs: 0.75rem;
+
+.base-amount{
+  font-size: 1rem;
+  font-weight: bold;
+
+  span{
+    &:nth-child(2){
+      font-size: small;
+    }
+  }
+}
+
+.money{
+  &::before{
+    content: '¥';
+    // font-size: 1rem;
+    margin-right: .3rem;
+  }
+}
+
+.base-title {
+  // font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: .6rem;
+}
+
+.icon-font {
+  width: 2.2rem;
+  height: 2.2rem;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

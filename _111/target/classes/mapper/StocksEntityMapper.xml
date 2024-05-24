@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.StocksEntityMapper">
+
+
+    <insert id="insertStock" parameterType="com.example.entity.stocks">
+    insert into stocks (stock_code, corporate_name, buying_price, stock_market_prices, holdings,date)
+    values (#{stock_code,jdbcType=VARCHAR}, #{corporate_name,jdbcType=VARCHAR},#{buying_price,jdbcType=FLOAT},#{stock_market_prices,jdbcType=FLOAT},#{holdings,jdbcType=INTEGER},#{date,jdbcType=DATE})
+  </insert>
+
+    <select id="SearchStocks" resultType="com.example.entity.stocks">
+    SELECT * FROM stocks
+    WHERE stock_code = #{stock_code,jdbcType=VARCHAR}
+</select>
+
+
+    <select id="GetAllStocks" resultType="com.example.entity.stocks">
+    SELECT * from stocks;
+</select>
+
+
+    <delete id="DeleteStocks" >
+        DELETE from stocks where stock_code = #{stock_code,jdbcType=VARCHAR};
+    </delete>
+
+    <select id="getTotalStockValue" resultType="java.lang.Double">
+    SELECT SUM(buying_price * holdings) AS totalValue
+    FROM stocks;
+</select>
+
+    <insert id="batchInsertStocks" parameterType="java.util.List">
+        INSERT INTO stocks (stock_code, corporate_name, buying_price, stock_market_prices, holdings, date)
+        VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.stock_code}, #{item.corporate_name}, #{item.buying_price}, #{item.stock_market_prices}, #{item.holdings}, #{item.date})
+        </foreach>
+    </insert>
+
+    <select id="getStocksProfit" resultType="java.lang.Double">
+    SELECT
+    SUM((stock_market_prices - buying_price) * holdings) AS total_profit
+    FROM
+    stocks;
+</select>
+
+
+</mapper>
+
+

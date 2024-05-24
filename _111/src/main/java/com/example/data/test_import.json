@@ -1,0 +1,138 @@
+[
+  {
+    "stock_code": "AAPL",
+    "corporate_name": "Apple Inc.",
+    "buying_price": 150.00,
+    "stock_market_prices": 175.50,
+    "holdings": 100,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "GOOGL",
+    "corporate_name": "Alphabet Inc.",
+    "buying_price": 2500.00,
+    "stock_market_prices": 2700.75,
+    "holdings": 50,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "MSFT",
+    "corporate_name": "Microsoft Corporation",
+    "buying_price": 300.00,
+    "stock_market_prices": 320.25,
+    "holdings": 75,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "AMZN",
+    "corporate_name": "Amazon.com Inc.",
+    "buying_price": 3400.00,
+    "stock_market_prices": 3550.50,
+    "holdings": 40,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "TSLA",
+    "corporate_name": "Tesla Inc.",
+    "buying_price": 800.00,
+    "stock_market_prices": 850.25,
+    "holdings": 60,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "FB",
+    "corporate_name": "Meta Platforms Inc.",
+    "buying_price": 330.00,
+    "stock_market_prices": 345.75,
+    "holdings": 90,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "NVDA",
+    "corporate_name": "NVIDIA Corporation",
+    "buying_price": 700.00,
+    "stock_market_prices": 750.50,
+    "holdings": 55,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "NFLX",
+    "corporate_name": "Netflix Inc.",
+    "buying_price": 500.00,
+    "stock_market_prices": 520.75,
+    "holdings": 70,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "INTC",
+    "corporate_name": "Intel Corporation",
+    "buying_price": 50.00,
+    "stock_market_prices": 52.25,
+    "holdings": 120,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "AMD",
+    "corporate_name": "Advanced Micro Devices Inc.",
+    "buying_price": 100.00,
+    "stock_market_prices": 110.50,
+    "holdings": 85,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "PYPL",
+    "corporate_name": "PayPal Holdings Inc.",
+    "buying_price": 150.00,
+    "stock_market_prices": 160.25,
+    "holdings": 60,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "IBM",
+    "corporate_name": "International Business Machines Corporation",
+    "buying_price": 120.00,
+    "stock_market_prices": 130.75,
+    "holdings": 45,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "CSCO",
+    "corporate_name": "Cisco Systems Inc.",
+    "buying_price": 45.00,
+    "stock_market_prices": 48.25,
+    "holdings": 100,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "PEP",
+    "corporate_name": "PepsiCo Inc.",
+    "buying_price": 150.00,
+    "stock_market_prices": 155.50,
+    "holdings": 55,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "DIS",
+    "corporate_name": "The Walt Disney Company",
+    "buying_price": 180.00,
+    "stock_market_prices": 190.25,
+    "holdings": 40,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "BA",
+    "corporate_name": "The Boeing Company",
+    "buying_price": 220.00,
+    "stock_market_prices": 230.75,
+    "holdings": 30,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "GS",
+    "corporate_name": "The Goldman Sachs Group Inc.",
+    "buying_price": 350.00,
+    "stock_market_prices": 365.50,
+    "holdings": 25,
+    "date": "2023-11-10"
+  }
+]

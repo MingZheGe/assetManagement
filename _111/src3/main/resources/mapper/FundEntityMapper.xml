@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.FundsEntityMapper">
+
+
+    <insert id="addFunds" >
+    insert into funds (fund_code, fund_name, buying_price,fund_market_prices, date)
+    values (#{fund_code,jdbcType=VARCHAR}, #{fund_name,jdbcType=VARCHAR},#{buying_price,jdbcType=FLOAT},#{fund_market_prices,jdbcType=FLOAT},#{date,jdbcType=DATE})
+  </insert>
+
+    <select id="searchFunds" resultType="com.example.entity.funds">
+    SELECT * FROM funds
+    WHERE funds_code = #{funds_code,jdbcType=VARCHAR}
+</select>
+
+
+
+    <select id="searchAllFunds" resultType="com.example.entity.funds">
+    SELECT * from funds;
+</select>
+
+
+    <delete id="deleteFunds" >
+        DELETE from funds where fund_code = #{fund_code,jdbcType=VARCHAR};
+    </delete>
+
+    <select id="getTotalBuyingPriceForFunds" resultType="java.lang.Double">
+    SELECT SUM(buying_price) AS totalBuyingPrice
+    FROM funds
+</select>
+
+    <insert id="batchInsertFunds" parameterType="java.util.List">
+        INSERT INTO funds (funds_code, fund_name, buying_price, fund_market_prices,  date)
+        VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.funds_code}, #{item.fund_name}, #{item.buying_price}, #{item.fund_market_prices}, #{item.date})
+        </foreach>
+    </insert>
+
+
+</mapper>
+
+

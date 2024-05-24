@@ -1,0 +1,121 @@
+[
+  {
+    "funds_code": "AAPL",
+    "fund_name": "Apple Inc.",
+    "buying_price": 150.00,
+    "fund_market_prices": 175.50,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "GOOGL",
+    "fund_name": "Alphabet Inc.",
+    "buying_price": 2500.00,
+    "fund_market_prices": 2700.75,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "MSFT",
+    "fund_name": "Microsoft Corporation",
+    "buying_price": 300.00,
+    "fund_market_prices": 320.25,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "AMZN",
+    "fund_name": "Amazon.com Inc.",
+    "buying_price": 3400.00,
+    "fund_market_prices": 3550.50,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "TSLA",
+    "fund_name": "Tesla Inc.",
+    "buying_price": 800.00,
+    "fund_market_prices": 850.25,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "FB",
+    "fund_name": "Meta Platforms Inc.",
+    "buying_price": 330.00,
+    "fund_market_prices": 345.75,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "NVDA",
+    "fund_name": "NVIDIA Corporation",
+    "buying_price": 700.00,
+    "fund_market_prices": 750.50,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "NFLX",
+    "fund_name": "Netflix Inc.",
+    "buying_price": 500.00,
+    "fund_market_prices": 520.75,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "INTC",
+    "fund_name": "Intel Corporation",
+    "buying_price": 50.00,
+    "fund_market_prices": 52.25,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "AMD",
+    "fund_name": "Advanced Micro Devices Inc.",
+    "buying_price": 100.00,
+    "fund_market_prices": 110.50,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "PYPL",
+    "fund_name": "PayPal Holdings Inc.",
+    "buying_price": 150.00,
+    "fund_market_prices": 160.25,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "IBM",
+    "fund_name": "International Business Machines Corporation",
+    "buying_price": 120.00,
+    "fund_market_prices": 130.75,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "CSCO",
+    "fund_name": "Cisco Systems Inc.",
+    "buying_price": 45.00,
+    "fund_market_prices": 48.25,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "PEP",
+    "fund_name": "PepsiCo Inc.",
+    "buying_price": 150.00,
+    "fund_market_prices": 155.50,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "DIS",
+    "fund_name": "The Walt Disney Company",
+    "buying_price": 180.00,
+    "fund_market_prices": 190.25,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "BA",
+    "fund_name": "The Boeing Company",
+    "buying_price": 220.00,
+    "fund_market_prices": 230.75,
+    "date": "2023-11-10"
+  },
+  {
+    "funds_code": "GS",
+    "fund_name": "The Goldman Sachs Group Inc.",
+    "buying_price": 350.00,
+    "fund_market_prices": 365.50,
+    "date": "2023-11-10"
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "stock_code": "300184",
+    "corporate_name": "力源信息",
+    "buying_price": 150.00,
+    "stock_market_prices": 175.50,
+    "holdings": 100,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "300554",
+    "corporate_name": "三超新材",
+    "buying_price": 2500.00,
+    "stock_market_prices": 2700.75,
+    "holdings": 50,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "300606",
+    "corporate_name": "金太阳",
+    "buying_price": 300.00,
+    "stock_market_prices": 320.25,
+    "holdings": 75,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "001326",
+    "corporate_name": "联域股份",
+    "buying_price": 3400.00,
+    "stock_market_prices": 3550.50,
+    "holdings": 40,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "300812",
+    "corporate_name": "易天股份",
+    "buying_price": 800.00,
+    "stock_market_prices": 850.25,
+    "holdings": 60,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "002499",
+    "corporate_name": "科林退",
+    "buying_price": 330.00,
+    "stock_market_prices": 345.75,
+    "holdings": 90,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "002263",
+    "corporate_name": "大东南",
+    "buying_price": 700.00,
+    "stock_market_prices": 750.50,
+    "holdings": 55,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "000572",
+    "corporate_name": "海马汽车",
+    "buying_price": 500.00,
+    "stock_market_prices": 520.75,
+    "holdings": 70,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "301508",
+    "corporate_name": "中机认检",
+    "buying_price": 50.00,
+    "stock_market_prices": 52.25,
+    "holdings": 120,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "688648",
+    "corporate_name": "中邮科技",
+    "buying_price": 100.00,
+    "stock_market_prices": 110.50,
+    "holdings": 85,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "688652",
+    "corporate_name": "京仪装备",
+    "buying_price": 150.00,
+    "stock_market_prices": 160.25,
+    "holdings": 60,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "301568",
+    "corporate_name": "思泰克",
+    "buying_price": 120.00,
+    "stock_market_prices": 130.75,
+    "holdings": 45,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "002262",
+    "corporate_name": "恩华药业",
+    "buying_price": 45.00,
+    "stock_market_prices": 48.25,
+    "holdings": 100,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "873679",
+    "corporate_name": "前进科技",
+    "buying_price": 150.00,
+    "stock_market_prices": 155.50,
+    "holdings": 55,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "688398",
+    "corporate_name": "东方生物",
+    "buying_price": 180.00,
+    "stock_market_prices": 190.25,
+    "holdings": 40,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "688082",
+    "corporate_name": "盛美上海",
+    "buying_price": 220.00,
+    "stock_market_prices": 230.75,
+    "holdings": 30,
+    "date": "2023-11-10"
+  },
+  {
+    "stock_code": "000568",
+    "corporate_name": "泸州老窖",
+    "buying_price": 350.00,
+    "stock_market_prices": 365.50,
+    "holdings": 25,
+    "date": "2023-11-10"
+  }
+]

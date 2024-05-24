@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.BillEntityMapper">
+    <insert id="insertBill" parameterType="com.example.entity.Bill">
+        insert into bill (type, amount, date, category, remark, id)
+        values (#{type,jdbcType=VARCHAR}, #{amount,jdbcType=FLOAT}, #{date,jdbcType=DATE}, #{category,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, #{id,jdbcType=VARCHAR})
+    </insert>
+
+    <select id="SearchTodayBill" resultType="com.example.entity.Bill">
+        SELECT * FROM bill
+        WHERE date = #{date, jdbcType=DATE}
+    </select>
+
+    <select id="searchBill" resultType="com.example.entity.Bill">
+        SELECT * FROM bill
+        WHERE id = #{id,jdbcType=VARCHAR}
+    </select>
+
+    <select id="getTotalAmount" resultType="float">
+        SELECT SUM(amount) AS total_amount FROM bill
+    </select>
+
+    <select id="getDayAverageBill" resultType="float">
+        SELECT SUM(amount) / COUNT(DISTINCT date) AS average_daily_income FROM bill
+    </select>
+
+    <select id="getTotalIncomeExpenseByType" resultType="java.util.Map">
+        SELECT type,
+               SUM(CASE WHEN type = 'income' THEN amount ELSE 0 END) AS income,
+               SUM(CASE WHEN type = 'expend' THEN amount ELSE 0 END) AS expense
+        FROM bill
+        GROUP BY type
+    </select>
+
+    <select id="getTotalIncomeExpenseByMonth" resultType="java.util.Map">
+        SELECT DATE_FORMAT(date, '%m') AS month,
+               SUM(CASE WHEN type = 'income' THEN amount ELSE 0 END) AS income,
+               SUM(CASE WHEN type = 'expend' THEN amount ELSE 0 END) AS expense
+        FROM bill
+        GROUP BY month
+        ORDER BY month;
+    </select>
+
+    <select id="getTotalBillByMonth" resultType="java.util.Map">
+        select *,MONTH(date) as month from bill;
+    </select>
+
+
+    <select id="GetAllBill" resultType="com.example.entity.Bill">
+        SELECT * from bill;
+    </select>
+
+    <delete id="DeleteBill">
+        DELETE from bill where id = #{id,jdbcType=VARCHAR};
+    </delete>
+
+    <select id="getBillCount" resultType="int">
+        SELECT count(*) from bill;
+    </select>
+
+    <select id="getExpenseByCategory" resultType="java.util.Map">
+    SELECT
+        category AS name,
+        SUM(amount) / (
+            SELECT SUM(amount)
+            FROM bill
+            WHERE type = 'expend'
+        ) AS value,
+        CASE
+            WHEN category = 'food' THEN 'shiwu'
+            WHEN category = 'life' THEN 'shenghuojiaofei'
+            WHEN category = 'transport' THEN 'jiaotongfei'
+            WHEN category = 'shopping' THEN 'gouwudai'
+            WHEN category = 'other' THEN 'ico_e_advice'
+            ELSE NULL
+        END AS icon
+    FROM bill
+    WHERE type = 'expend'
+    GROUP BY category
+</select>
+
+    <select id="getIncomeByType" resultType="java.util.Map">
+    SELECT
+        type AS name,
+        SUM(amount) / (
+            SELECT SUM(amount)
+            FROM bill
+            WHERE type = 'income'
+        ) AS value,
+        CASE
+            WHEN type = 'wages' THEN 'gongzi'
+            WHEN type = 'bonus' THEN 'bonus'
+            WHEN type = 'interest' THEN 'zijinchilixifenpeichaxun'
+            ELSE NULL
+        END AS icon
+    FROM bill
+    WHERE type = 'income'
+    GROUP BY type
+</select>
+
+</mapper>
