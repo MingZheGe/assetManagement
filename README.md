@@ -1,1 +1,2 @@
 后端在_111文件夹,前端在assetManagement
+前端k线展示：向服务器请求python脚本，返回聚宽查询结果
